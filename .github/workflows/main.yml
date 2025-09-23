@@ -1,4 +1,4 @@
-name: Python 3.9 application test with github Action
+name: Python 3.9 app. test with github Action
 on: [push]
 jobs:
   build:
