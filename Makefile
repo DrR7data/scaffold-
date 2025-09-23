@@ -25,7 +25,13 @@ all: install lint test right
 
 
 right:
-	@echo "Hi everybody, all right"
+	@echo "Hi everybody, All right"
+
+source:
+	#ssh-keygen -t rsa
+	#python3 -m venv ~/.scaffold-
+	#source ~/.scaffold-/bin/activate
+
 
 
 
