@@ -10,7 +10,7 @@ install-azure:
 
 install-gcloud:
 	pip install --upgrade pip &&\
-            pip install -r requirements-azure.txt
+            pip install -r requirements-gcloud.txt
 
 format:
 	black *.py
