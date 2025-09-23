@@ -8,6 +8,9 @@ install-azure:
 	pip install --upgrade pip &&\
 	    pip install -r requirements-azure.txt
 
+install-gcloud:
+	pip install --upgrade pip &&\
+            pip install -r requirements-azure.txt
 
 format:
 	black *.py
@@ -23,6 +26,6 @@ all: install lint test right
 
 right:
 	@echo "Hi everybody, all right"
-     
 
-    
+
+
