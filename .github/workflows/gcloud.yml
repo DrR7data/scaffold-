@@ -1,0 +1,23 @@
+name: Python 3.13.7 gcloud app. test with github Action
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.13.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.13.7
+    - name: Install dependencies
+      run:
+        make install-gcloud
+    - name: Lint with Pylint
+      run:
+        make lint
+    - name: Test wth Pytest
+      run:
+        make test
+    - name: Format code with Python
+      run:
+        make format
