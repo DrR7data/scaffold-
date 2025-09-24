@@ -3,4 +3,4 @@
 # scaffold-
 This is a project scaffold for Python
 
-## In aws9
+## In aws9, azure
